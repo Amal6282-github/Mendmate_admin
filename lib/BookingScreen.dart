@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mendmate_homepage/BookingScreenDataRow.dart';
 
@@ -145,9 +144,9 @@ class Bookingscreen extends StatelessWidget {
                       rows: const [],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 320,
-                    child: const SingleChildScrollView(
+                    child: SingleChildScrollView(
                       scrollDirection: Axis.vertical,
                       child: Column(
                         children: [

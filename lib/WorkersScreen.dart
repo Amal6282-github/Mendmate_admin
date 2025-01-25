@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mendmate_homepage/WorkerCard.dart';
 
@@ -63,7 +62,7 @@ class Workersscreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Expanded(child: SizedBox()),
+                      const Expanded(child: SizedBox()),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Container(
@@ -137,9 +136,9 @@ class Workersscreen extends StatelessWidget {
                       rows: const [],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 320,
-                    child: const SingleChildScrollView(
+                    child: SingleChildScrollView(
                       scrollDirection: Axis.vertical,
                       child: Column(
                         children: [

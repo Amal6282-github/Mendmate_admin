@@ -83,9 +83,9 @@ class Customersscreen extends StatelessWidget {
                           rows: const [],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 530,
-                        child: const SingleChildScrollView(
+                        child: SingleChildScrollView(
                           scrollDirection: Axis.vertical,
                           child: Column(
                             children: [

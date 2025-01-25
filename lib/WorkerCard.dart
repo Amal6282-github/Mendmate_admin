@@ -49,10 +49,10 @@ class Workercard extends StatelessWidget {
               width: 160,
             ),
             Container(
-              decoration: BoxDecoration(shape: BoxShape.rectangle),
+              decoration: const BoxDecoration(shape: BoxShape.rectangle),
               child: TextButton(
                 onPressed: () {},
-                child: Text(style: TextStyle(color: Colors.blue), 'Details'),
+                child: const Text(style: TextStyle(color: Colors.blue), 'Details'),
               ),
             )
           ],
