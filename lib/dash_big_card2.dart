@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mendmate_homepage/DashBigCard2SubCard.dart';
+import 'package:mendmate_homepage/dash_big_card_2_sub_card.dart';
 
 class Dashbigcard2 extends StatelessWidget {
   const Dashbigcard2({
@@ -47,7 +47,8 @@ class Dashbigcard2 extends StatelessWidget {
                   const Divider(
                     thickness: 1,
                   ),
-                  const Dashbigcard2subcard(title: 'painting', value1: '58 Bookings'),
+                  const Dashbigcard2subcard(
+                      title: 'painting', value1: '58 Bookings'),
                   const Divider(
                     thickness: 1,
                   ),
@@ -56,7 +57,8 @@ class Dashbigcard2 extends StatelessWidget {
                   const Divider(
                     thickness: 1,
                   ),
-                  const Dashbigcard2subcard(title: 'CCTV Work', value1: '7 Bookings'),
+                  const Dashbigcard2subcard(
+                      title: 'CCTV Work', value1: '7 Bookings'),
                   const Divider(
                     thickness: 1,
                   ),

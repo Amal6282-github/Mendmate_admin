@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mendmate_homepage/DashBigCard1.dart';
-import 'package:mendmate_homepage/DashSmallCard.dart';
-import 'package:mendmate_homepage/DashBigCard2.dart';
+import 'package:mendmate_homepage/dash_big_card1.dart';
+import 'package:mendmate_homepage/dash_small_card.dart';
+import 'package:mendmate_homepage/dash_big_card2.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});

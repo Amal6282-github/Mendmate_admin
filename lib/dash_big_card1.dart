@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mendmate_homepage/DashBigCard1Subcard.dart';
+import 'package:mendmate_homepage/dash_bigcard1_subcard.dart';
 
 class Dashbigcard1 extends StatelessWidget {
   const Dashbigcard1({

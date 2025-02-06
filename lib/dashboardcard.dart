@@ -10,7 +10,8 @@ class Dashboardcard extends StatelessWidget {
       {super.key,
       required this.title,
       required this.icon,
-      required this.ontap, required this.color});
+      required this.ontap,
+      required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -21,11 +22,10 @@ class Dashboardcard extends StatelessWidget {
         child: Container(
           width: 250,
           decoration: BoxDecoration(
-              color: color,
-              borderRadius: BorderRadius.circular(10)),
+              color: color, borderRadius: BorderRadius.circular(10)),
           height: 50,
           child: Padding(
-            padding: const EdgeInsets.all(15),
+            padding: const EdgeInsets.only(left: 20),
             child: Row(
               children: [
                 Icon(
