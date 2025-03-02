@@ -8,7 +8,6 @@ import 'package:mendmate_homepage/dashboard_screen.dart';
 import 'package:mendmate_homepage/dashboardcard.dart';
 import 'package:mendmate_homepage/features/login/login_screen.dart';
 import 'package:mendmate_homepage/services_screen.dart';
-import 'package:mendmate_homepage/theme/app_theme.dart';
 import 'package:mendmate_homepage/workers_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -25,7 +24,7 @@ class _MyHomePageState extends State<Homepage>
 
   @override
   void initState() {
-    tabController = TabController(length: 6, vsync: this);
+    tabController = TabController(length: 5, vsync: this);
     tabController.addListener(() {
       setState(() {});
     });
@@ -67,11 +66,12 @@ class _MyHomePageState extends State<Homepage>
                       ),
                       const SizedBox(height: 30.0),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 25),
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: SingleChildScrollView(
                           scrollDirection: Axis.vertical,
                           physics: const NeverScrollableScrollPhysics(),
                           child: Column(
+                            spacing: 10,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Dashboardcard(
@@ -82,12 +82,12 @@ class _MyHomePageState extends State<Homepage>
                                 },
                                 color: tabController.index == 0
                                     ? const Color(0xff2563EB)
-                                    : onSurfaceColor,
+                                    : Colors.transparent,
                               ),
                               Dashboardcard(
                                 color: tabController.index == 1
                                     ? const Color(0xff2563EB)
-                                    : onSurfaceColor,
+                                    : Colors.transparent,
                                 title: 'Bookings',
                                 icon: Icons.calendar_month,
                                 ontap: () {
@@ -97,7 +97,7 @@ class _MyHomePageState extends State<Homepage>
                               Dashboardcard(
                                 color: tabController.index == 2
                                     ? const Color(0xff2563EB)
-                                    : onSurfaceColor,
+                                    : Colors.transparent,
                                 title: 'Services',
                                 icon: Icons.build,
                                 ontap: () {
@@ -107,7 +107,7 @@ class _MyHomePageState extends State<Homepage>
                               Dashboardcard(
                                 color: tabController.index == 3
                                     ? const Color(0xff2563EB)
-                                    : onSurfaceColor,
+                                    : Colors.transparent,
                                 title: 'Customers',
                                 icon: Icons.group,
                                 ontap: () {
@@ -117,7 +117,7 @@ class _MyHomePageState extends State<Homepage>
                               Dashboardcard(
                                 color: tabController.index == 4
                                     ? const Color(0xff2563EB)
-                                    : onSurfaceColor,
+                                    : Colors.transparent,
                                 title: 'Workers',
                                 icon: Icons.settings_sharp,
                                 ontap: () {
@@ -127,7 +127,7 @@ class _MyHomePageState extends State<Homepage>
                               Dashboardcard(
                                 color: tabController.index == 5
                                     ? const Color(0xff2563EB)
-                                    : onSurfaceColor,
+                                    : Colors.transparent,
                                 title: 'Log Out',
                                 icon: Icons.logout,
                                 ontap: () {

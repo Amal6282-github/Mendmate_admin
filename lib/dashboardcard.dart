@@ -15,33 +15,29 @@ class Dashboardcard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+    return Material(
+      color: color,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       child: InkWell(
         onTap: ontap,
-        child: Container(
-          width: 250,
-          decoration: BoxDecoration(
-              color: color, borderRadius: BorderRadius.circular(10)),
-          height: 50,
-          child: Padding(
-            padding: const EdgeInsets.only(left: 20),
-            child: Row(
-              children: [
-                Icon(
-                  icon,
-                  color: Colors.white,
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                Text(title,
-                    style: GoogleFonts.poppins(
-                        color: Colors.white,
-                        fontSize: 17,
-                        fontWeight: FontWeight.w300)),
-              ],
-            ),
+        borderRadius: BorderRadius.circular(10),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+          child: Row(
+            children: [
+              Icon(
+                icon,
+                color: Colors.white,
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Text(title,
+                  style: GoogleFonts.poppins(
+                      color: Colors.white,
+                      fontSize: 17,
+                      fontWeight: FontWeight.w300)),
+            ],
           ),
         ),
       ),
