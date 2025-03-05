@@ -7,7 +7,7 @@ import 'package:mendmate_homepage/dashboard_screen.dart';
 
 import 'package:mendmate_homepage/dashboardcard.dart';
 import 'package:mendmate_homepage/features/login/login_screen.dart';
-import 'package:mendmate_homepage/services_screen.dart';
+import 'package:mendmate_homepage/features/service/services_screen.dart';
 import 'package:mendmate_homepage/workers_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
