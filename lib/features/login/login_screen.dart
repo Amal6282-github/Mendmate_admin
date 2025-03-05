@@ -5,6 +5,8 @@ import 'package:mendmate_homepage/features/home/homepage.dart';
 import 'package:mendmate_homepage/features/login/loginbloc/login_bloc.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../../util/value_validator.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -92,6 +94,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 'Email'),
                             TextFormField(
                               controller: _emailController,
+                              validator: emailValidator,
                               decoration: const InputDecoration(
                                 border: OutlineInputBorder(),
                                 hintText: 'Enter your email',
@@ -103,6 +106,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 'Password'),
                             TextFormField(
                               controller: _passwordController,
+                              validator: notEmptyValidator,
                               obscureText: !_isObscure,
                               decoration: InputDecoration(
                                   border: const OutlineInputBorder(),
